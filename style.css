@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p {
+    color: hsl(229, 6%, 66%);
+}
+body {
+    background-color: hsl(0, 0%, 98%);
+    font-size: 1.9vw;
+    font-family: "Poppins" sans-serif;
+}
+header {
+    text-align: center;
+    padding: 20px;
+}
+header > h1 {
+    padding: 10px;
+}
+.init {
+    font-size: 35px;
+    color: rgb(112, 110, 110);   
+}
+.container {
+    position: relative;
+    top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 50px);
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+}
+.supervisor, .team-builder, .calc, .karma {
+    width: 380px;
+    height: 280px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px;
+}
+.supervisor {
+    position: relative;
+    border-top: 3px solid hsl(180, 62%, 55%);
+    grid-column: 1;
+    grid-row: 4;
+}
+.supervisor h3 {
+    padding-bottom: 10px;
+}
+.supervisor img {
+    position: absolute;
+    right: 45px;
+    bottom: 35px;
+}
+.team-builder {
+    position: relative;
+    border-top: 3px solid hsl(0, 78%, 62%);
+    grid-column: 2;
+    grid-row: 1;
+}
+.team-builder h3 {
+    padding-bottom: 10px;
+}
+.team-builder img {
+    position: absolute;
+    right: 45px;
+    bottom: 35px;
+}
+.karma {
+    position: relative;
+    border-top: 3px solid hsl(34, 97%, 64%);
+    grid-column: 2;
+    grid-row: 6;
+}
+.karma h3 {
+    padding-bottom: 10px;
+}
+.karma img {
+    position: absolute;
+    right: 45px;
+    bottom: 35px;
+}
+.calc {
+    position: relative;
+    border-top: 3px solid hsl(212, 86%, 64%);
+    grid-column: 3;
+    grid-row: 4;
+}
+.calc h3 {
+    padding-bottom: 10px;
+}
+.calc img {
+    position: absolute;
+    right: 45px;
+    bottom: 35px;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media all and (max-width: 1200px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        position: relative;
+        top: 5px;
+    }
+    .supervisor, .team-builder, .karma, .calc {
+        margin: 15px;
+    } 
+}
